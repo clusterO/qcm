@@ -1,0 +1,22 @@
+.content {
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.form-title {
+	font-size: 28px;
+	font-weight: 6em;
+	margin-bottom: 10px;
+}
+
+.question-title {
+	width: 60%;
+	margin-right: 10%;
+}
+
+.question-description {
+	width: 60%;
+	margin-right: 10%;
+}
+

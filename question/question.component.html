@@ -1,0 +1,36 @@
+<mat-card class="content">
+
+  <div class="form-title">{{ form.titre_formulaire }}</div>
+  <div class="form-desc">{{ form.description_formulaire }}</div>
+
+</mat-card>
+
+<mat-card *ngFor="let question of questions; let i = index" class="content" [@cardState]="question.state" (click)="toggleState(question, i)">
+
+  <mat-form-field class="question-title">
+    <input matInput value="{{ question.titre }}" placeholder="Titre">
+  </mat-form-field>
+
+  <mat-form-field>
+	  <mat-select placeholder="{{ question.type }}">
+	    <mat-option value="{{ question.type }}">{{ question.type }}</mat-option>
+    </mat-select>
+  </mat-form-field>
+
+  <mat-form-field class="question-description">
+    <input matInput value="{{ question.description }}" placeholder="Description">
+  </mat-form-field>
+
+  <ng-template appHost></ng-template>
+
+  <div [ngSwitch]="question.type">
+
+    <mat-form-field *ngSwitchCase="'set_date'">
+      <input matInput [matDatepicker]="picker" placeholder="date par defaut">
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+    
+  </div>
+          
+</mat-card>

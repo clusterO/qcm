@@ -1,0 +1,13 @@
+<app-template></app-template>
+
+<div>
+  <mat-tab-group (selectedTabChange)="onTabChange($event);">
+    <mat-tab label="QUESTIONS"></mat-tab>
+    <mat-tab label="REPONSES"></mat-tab>
+  </mat-tab-group>
+</div>
+
+<mat-card>
+  <app-response *ngIf="response"></app-response>
+  <app-question *ngIf="question"></app-question>
+</mat-card>

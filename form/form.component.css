@@ -1,0 +1,38 @@
+@import url('//ajax.googleapis.com/ajax/libs/angular_material/0.8.3/angular-material.min.css');
+@import url(http://fonts.googleapis.com/css?family=RobotoDraft:regular,bold,italic,thin,light,bolditalic,black,medium&lang=en);
+
+.form {
+  mat-card {
+    padding: 0!important;
+  }
+}
+
+mat-toolbar{
+	  background-color: rgb(63,81,181);
+	  color: rgba(255,255,255,0.87);
+	  font-family: RobotoDraft,Roboto,'Helvetica Neue',sans-serif;
+	  font-weight: 400;
+	  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+      transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+mat-card-content{
+	padding: 20px;
+}
+
+button{
+	  background-color: rgb(63,81,181);
+	  color: rgba(255,255,255,0.87);
+	  font-family: RobotoDraft,Roboto,'Helvetica Neue',sans-serif;
+	  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+button:hover{
+	  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.anonymous{
+	position: absolute;
+	top: 30px;
+	right: 20px;
+}

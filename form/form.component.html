@@ -1,0 +1,45 @@
+<div layout="row" layout-align="space-around" layout-padding="layout-padding" ng-cloak="ng-cloak" class="form">
+<mat-card flex="flex" flex-gt-sm="100" flex-gt-md="80">
+	  <mat-toolbar>
+		<div class="mat-toolbar-tools">
+		  <h2><span>{{ title }}</span></h2>
+		  <mat-slide-toggle class="anonymous" [(ngModel)]="form.reponses_anonymes_acceptees">Anonyme</mat-slide-toggle>
+		</div>
+	  </mat-toolbar>
+	  
+	  <mat-card-content>
+
+	    <mat-form-field>
+			  <input matInput placeholder="Titre" [(ngModel)]="form.titre_formulaire">
+		  </mat-form-field>
+		  
+		  <mat-form-field>
+			  <input matInput placeholder="Description" [(ngModel)]="form.description_formulaire">
+		  </mat-form-field>
+		  
+		  <mat-form-field>
+			  <input matInput placeholder="Date création" [(ngModel)]="form.date_creation">
+		  </mat-form-field>
+		  
+		  <mat-form-field>
+			<mat-select placeholder="Lists">
+			  <mat-option value="1">List 1</mat-option>
+			  <mat-option value="2">List 2</mat-option>
+			  <mat-option value="3">List 3</mat-option>
+      </mat-select>
+        <!-- <mat-hint>Pick a list</mat-hint> -->
+        <mat-error>You must make a selection</mat-error>
+		  </mat-form-field>
+		  
+		  <mat-form-field>
+			  <input matInput placeholder="File" [(ngModel)]="form.image" readonly="readonly">
+			</mat-form-field>
+			
+			<mat-dialog-actions>
+				<button mat-button [mat-dialog-close]=false>Close</button>
+				<button mat-button (click)="save();">Submit</button>
+			</mat-dialog-actions>
+
+		</mat-card-content>
+</mat-card>
+</div>

@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+}
+
+.mat-table {
+  overflow: auto;
+  max-height: 550px;
+}
+
+.edit {
+  display: block;
+  float: left;
+}
+
+.details {
+  display: block;
+  float: left;
+}
+
+.stats {
+  display: block;
+  float: left;
+}
+
+.download {
+  display: block;
+  float: left;
+}
+
+button {
+  background-color: rgb(255, 255, 255);
+  color: rgba(0, 0, 0, 0.87);
+}
+

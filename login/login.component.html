@@ -1,0 +1,22 @@
+<div layout="row" layout-align="space-around" layout-padding="layout-padding" ng-cloak="ng-cloak" class="login-form">
+<mat-card flex="flex" flex-gt-sm="50" flex-gt-md="25">
+	  <mat-toolbar>
+		<div class="mat-toolbar-tools">
+		  <h2><span>FormStats</span></h2>
+		</div>
+	  </mat-toolbar>
+	  
+	  <mat-card-content>
+		  <mat-form-field>
+			<input [(ngModel)]="email" matInput placeholder="Email" value="">
+		  </mat-form-field>
+		  <br>
+		  <mat-form-field>
+			<input [(ngModel)]="password" type="password" matInput placeholder="Password" value="">
+		  </mat-form-field>
+		  <br>
+		  <button (click)="login();" mat-button>Accéder</button>
+	  </mat-card-content>
+
+</mat-card>
+</div>
