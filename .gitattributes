@@ -1,3 +1,10 @@
+.angular/cache/16.0.5/angular-webpack/1c91f6385a4323f0cd752fa3a5bb92b22c2c81c0/7.pack filter=lfs diff=lfs merge=lfs -text
+.angular/cache/16.0.5/angular-webpack/1c91f6385a4323f0cd752fa3a5bb92b22c2c81c0/1.pack filter=lfs diff=lfs merge=lfs -text
+.angular/cache/16.0.5/angular-webpack/1bddad817e0c6896850120798666438678271fe5/10.pack filter=lfs diff=lfs merge=lfs -text
+.angular/cache/16.0.5/angular-webpack/1c91f6385a4323f0cd752fa3a5bb92b22c2c81c0/5.pack filter=lfs diff=lfs merge=lfs -text
+.angular/cache/16.0.5/angular-webpack/1bddad817e0c6896850120798666438678271fe5/21.pack filter=lfs diff=lfs merge=lfs -text
+.angular/cache/16.0.5/angular-webpack/3332793a1e4bb54c5800b50f671cac869e3ebdb9/0.pack filter=lfs diff=lfs merge=lfs -text
+.angular/cache/16.0.5/angular-webpack/1c91f6385a4323f0cd752fa3a5bb92b22c2c81c0/9.pack filter=lfs diff=lfs merge=lfs -text
 *.ts filter=lfs diff=lfs merge=lfs -text
 *.css filter=lfs diff=lfs merge=lfs -text
 *.html filter=lfs diff=lfs merge=lfs -text
